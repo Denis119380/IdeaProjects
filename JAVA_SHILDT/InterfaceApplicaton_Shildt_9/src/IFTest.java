@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Реализация версии целочисленного стека фиксированной длины
 public class IFTest {
 
@@ -8,6 +10,8 @@ public class IFTest {
         // разместить числа в стеке
         for (int i = 0; i < 5; i++) stack1.push(i);
         for (int i = 0; i < 8; i++) stack2.push(i);
+
+        stack1.clear(); // реализация метода очистки стека
 
         // извлечь эти числа из стека
         System.out.println("Стек в stack1:");

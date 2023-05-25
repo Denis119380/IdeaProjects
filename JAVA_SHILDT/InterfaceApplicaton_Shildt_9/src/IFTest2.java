@@ -18,5 +18,8 @@ public class IFTest2 {
         System.out.println("Стек в stack2:");
         for (int i = 0; i < 20; i++)
             System.out.println(stack2.pop());
+
+        stack1.clear(); // не реализованный метод clear(),
+                        // метод с реализацией по умолчанию в интерфейсе
     }
 }

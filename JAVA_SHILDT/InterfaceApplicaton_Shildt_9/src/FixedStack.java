@@ -28,4 +28,11 @@ class FixedStack implements InStack {
         else
             return stk[tos--];
     }
+
+    public int clear() { // реализация метода очистки стека,
+                         // исходя из метода с реализацией по умолчанию
+        System.out.println("Реализация метода clear().");
+        tos = 0;
+        return stk[tos--];
+    }
 }
