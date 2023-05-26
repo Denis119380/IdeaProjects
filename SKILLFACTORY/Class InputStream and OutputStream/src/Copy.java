@@ -22,9 +22,11 @@ public class Copy {
 
     public static void main(String[] args) throws IOException{
 
-        Copy copy = new Copy();
-
-        copy.copyFileUsingStream("paint.png", "paintCopy.png");
+        Copy.copyFileUsingStream("paint.png", "paintCopy.png");
+        // метод статический поэтому его реализуем без создания экземпляра(объекта)
+//        Copy copy = new Copy();
+//
+//        copy.copyFileUsingStream("paint.png", "paintCopy.png");
         // файл считывания должен находиться в директории проекта
         // файл записи (копия) будет находиться в директории проекта
     }
