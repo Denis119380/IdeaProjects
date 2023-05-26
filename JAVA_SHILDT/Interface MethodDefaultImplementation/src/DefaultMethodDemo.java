@@ -9,5 +9,9 @@ public class DefaultMethodDemo {
         System.out.println(obj1.getString()); // метод по умолчанию
         System.out.println();
         System.out.println(obj2.getString()); // метода собственной реализации
+        System.out.println();
+
+        int a = MyIF.getDefaultNumber(); // метод статический из интерфейса
+        System.out.println(a);
     }
 }
