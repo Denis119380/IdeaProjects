@@ -1,0 +1,23 @@
+package AddFacilitiesMultiCatch;
+
+class MultiCatch { // многократный перехват
+
+    public static void main(String[] args) {
+        int a = 10, b = 0;
+        int[] val = {1, 2, 3};
+
+        try {
+//            int result = a / b; // сгенерировать исключение
+                                // типа ArithmeticException
+             val[10] = 19;    // сгенерировать исключение
+            // типа ArrayIndexOutOfBoundsException
+            // В этом операторе catch перехватываются
+            // оба исключения
+        } catch (ArithmeticException |
+         ArrayIndexOutOfBoundsException e) {
+            System.out.println("Исключение перехвачено: "
+            + e);
+        }
+        System.out.println("После многократного перехвата.");
+    }
+}
