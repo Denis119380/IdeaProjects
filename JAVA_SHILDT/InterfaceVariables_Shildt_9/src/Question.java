@@ -7,14 +7,16 @@ class Question implements SharedConstants{
         int prob = (int) (100 * rand.nextDouble());
         // метод nextDouble() возвращает случайные числа
         // в пределах от 0.0 до 1.0
-        if (prob < 30)
-            return NO; // 30%
-        else if (prob < 60)
-            return YES; // 30%
-        else if (prob < 75)
-            return LATER; // 15%
+        if (prob < 25)
+            return NO; // 25%
+        else if (prob < 50)
+            return YES; // 25%
+        else if (prob < 70)
+            return MAYBE; // 20%
+        else if (prob < 86)
+            return LATER; // 16%
         else if (prob < 98)
-            return SOON; // 13%
+            return SOON; // 12%
         else
             return NEVER; // 2%
     }
